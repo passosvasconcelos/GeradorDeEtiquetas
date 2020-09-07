@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="788.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apptestemunho.ViewGerarEtiquetaController">
+    <stylesheets>
+        <URL value="@viewgeraretiqueta.css" />
+    </stylesheets>
+   <children>
+      <TabPane prefHeight="777.0" prefWidth="788.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="abaGerarEtiqueta" text="Gerar etiquetas">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="664.0" prefWidth="788.0">
+                     <children>
+                        <Button fx:id="btnAbrirTabelaAcervo" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#abrirTabelaAcervo" prefHeight="0.0" prefWidth="136.0" text="Abrir tabela do Acervo" />
+                        <Button fx:id="btnSalvasEtiquetas" layoutX="153.0" layoutY="14.0" mnemonicParsing="false" onAction="#salvarEtiquetas" text="Salvar Etiquetas" />
+                        <Button fx:id="btnImprimir" layoutX="257.0" layoutY="14.0" mnemonicParsing="false" onAction="#Imprimir" text="Imprimir" />
+                        <Button fx:id="btnExportarXLS" layoutX="323.0" layoutY="14.0" mnemonicParsing="false" onAction="#exportarXLS" text="Exportar zebra printer database" />
+                        <ScrollPane layoutX="14.0" layoutY="52.0" prefHeight="693.0" prefWidth="772.0">
+                           <content>
+                              <VBox fx:id="vboxPimacos" prefHeight="1595.0" prefWidth="611.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
